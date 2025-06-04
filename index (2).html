@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>&lt;MOCA&gt; 5</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="demo-styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+  </head>
+  <body>    
+    <div id="card">
+      <model-viewer
+        id="paused-change-demo"
+        skybox-image="https://cdn.glitch.global/491b1eca-951a-4c1c-a34e-f42cff336c2d/1.jpg?v=1651657980216"
+        orientation="0deg 0 0"  autoplay  ar=""  shadow-intensity="1"  environment-image="neutral"
+        auto-rotate  camera-controls   ar-status="not-presenting"
+        ar-modes="webxr scene-viewer quick-look"   animation-name="Dance Techno 01"       
+        src="https://cdn.glitch.global/b483cc74-3caf-4d24-823d-8ca8a92588f4/angel_-_mocaverse.glb?v=1718608572518"
+        poster="https://cdn.glitch.global/b483cc74-3caf-4d24-823d-8ca8a92588f4/Angel%20-%20Mocaverse.png?v=1718608568219"
+        ios-src="https://cdn.glitch.global/b483cc74-3caf-4d24-823d-8ca8a92588f4/Angel_-_Mocaverse.usdz?v=1718609635426"
+        alt="cupid_rabbid">
+        
+      <div id="controls" class="dim">
+          <label for="src">Play:</label>
+          <select id="src">            
+            <option value="Dance Techno 01">Dance 1</option>
+            <option value="Dance Breakin 01">Dance 2</option>
+            <option value="Dance Bugs 01">Dance 3</option>
+            <option value="Sit Chair Idle 01">Sit</option>
+            <option value="Walk 01">Walk</option>
+            <option value="Chase 01">Chase</option>
+            <option value="Climb 01">Climb</option>            
+            <option value="Laugh 01">Laugh</option>
+            <option value="Lotus 01">Sit 禪</option>
+            <option value="Goodbye 01">Goodbye</option></select
+          ><br />
+        </div>
+      <script>
+        (() => {
+          const modelViewer = document.querySelector("#paused-change-demo");          
+          modelViewer
+            .querySelector("#src")
+            .addEventListener("input", (event) => {
+            modelViewer.animationName = event.target.value;             
+            });
+        })();
+      </script>
+      </model-viewer>
+      <model-viewer
+        id="paused-change-demo2"
+        skybox-image="https://cdn.glitch.global/491b1eca-951a-4c1c-a34e-f42cff336c2d/1.jpg?v=1651657980216"
+        orientation="0deg 0 0"  autoplay   ar=""   shadow-intensity="1"    environment-image="neutral"
+        auto-rotate   camera-controls   ar-status="not-presenting"
+        ar-modes="webxr scene-viewer quick-look"      animation-name="Dance Techno 01"       
+        src="https://cdn.glitch.global/b483cc74-3caf-4d24-823d-8ca8a92588f4/builder_-_mocaverse.glb?v=1718608581406"
+        poster="https://cdn.glitch.global/b483cc74-3caf-4d24-823d-8ca8a92588f4/Builder%20-%20Mocaverse.png?v=1718608575802"
+        ios-src="https://cdn.glitch.global/b483cc74-3caf-4d24-823d-8ca8a92588f4/Builder_-_Mocaverse.usdz?v=1718609636153"
+        alt="loveletter_rabbid" >
+        <div id="controls" class="dim">
+          <label for="src">Play:</label>
+          <select id="src">   
+            <option value="Dance Techno 01">Dance 1</option>
+            <option value="Dance Breakin 01">Dance 2</option>
+            <option value="Dance Bugs 01">Dance 3</option>
+            <option value="Sit Chair Idle 01">Sit</option>
+            <option value="Walk 01">Walk</option>
+            <option value="Chase 01">Chase</option>
+            <option value="Climb 01">Climb</option>            
+            <option value="Laugh 01">Laugh</option>
+            <option value="Lotus 01">Sit 禪</option>
+            <option value="Goodbye 01">Goodbye</option></select
+          ><br />
+        </div>
+      <script>
+        (() => {
+          const modelViewer = document.querySelector("#paused-change-demo2");          
+          modelViewer
+            .querySelector("#src")
+            .addEventListener("input", (event) => {
+            modelViewer.animationName = event.target.value;             
+            });
+        })();
+      </script>
+      </model-viewer>
+      <model-viewer
+        id="paused-change-demo3"
+        skybox-image="https://cdn.glitch.global/491b1eca-951a-4c1c-a34e-f42cff336c2d/1.jpg?v=1651657980216"
+        orientation="0deg 0 0"  autoplay   ar=""   shadow-intensity="1"    environment-image="neutral"
+        auto-rotate   camera-controls   ar-status="not-presenting"
+        ar-modes="webxr scene-viewer quick-look"      animation-name="Dance Techno 01"       
+        src="https://cdn.glitch.global/b483cc74-3caf-4d24-823d-8ca8a92588f4/connector_-_mocaverse.glb?v=1718608587960"
+        poster="https://cdn.glitch.global/b483cc74-3caf-4d24-823d-8ca8a92588f4/Connector%20-%20Mocaverse.png?v=1718608583600"
+        ios-src="https://cdn.glitch.global/b483cc74-3caf-4d24-823d-8ca8a92588f4/Connector_-_Mocaverse.usdz?v=1718609636670"
+        alt="disco_rabbid" >
+        <div id="controls" class="dim">
+          <label for="src">Play:</label>
+          <select id="src">   
+            <option value="Dance Techno 01">Dance 1</option>
+            <option value="Dance Breakin 01">Dance 2</option>
+            <option value="Dance Bugs 01">Dance 3</option>
+            <option value="Sit Chair Idle 01">Sit</option>
+            <option value="Walk 01">Walk</option>
+            <option value="Chase 01">Chase</option>
+            <option value="Climb 01">Climb</option>            
+            <option value="Laugh 01">Laugh</option>
+            <option value="Lotus 01">Sit 禪</option>
+            <option value="Goodbye 01">Goodbye</option></select
+          ><br />
+        </div>
+      <script>
+        (() => {
+          const modelViewer = document.querySelector("#paused-change-demo3");          
+          modelViewer
+            .querySelector("#src")
+            .addEventListener("input", (event) => {
+            modelViewer.animationName = event.target.value;             
+            });
+        })();
+      </script>
+      </model-viewer>
+      <model-viewer
+        id="paused-change-demo4"
+        skybox-image="https://cdn.glitch.global/491b1eca-951a-4c1c-a34e-f42cff336c2d/1.jpg?v=1651657980216"
+        orientation="0deg 0 0"  autoplay   ar=""   shadow-intensity="1"    environment-image="neutral"
+        auto-rotate   camera-controls   ar-status="not-presenting"
+        ar-modes="webxr scene-viewer quick-look"      animation-name="Dance Techno 01"       
+        src="https://cdn.glitch.global/b483cc74-3caf-4d24-823d-8ca8a92588f4/dreamer_-_mocaverse.glb?v=1718608596440"
+        poster="https://cdn.glitch.global/b483cc74-3caf-4d24-823d-8ca8a92588f4/Dreamer%20-%20Mocaverse.png?v=1718608591816"
+        ios-src="https://cdn.glitch.global/b483cc74-3caf-4d24-823d-8ca8a92588f4/Dreamer_-_Mocaverse.usdz?v=1718609637616"
+        alt="singer_rabbid" >
+      <div id="controls" class="dim">
+          <label for="src">Play:</label>
+          <select id="src">   
+            <option value="Dance Techno 01">Dance 1</option>
+            <option value="Dance Breakin 01">Dance 2</option>
+            <option value="Dance Bugs 01">Dance 3</option>
+            <option value="Sit Chair Idle 01">Sit</option>
+            <option value="Walk 01">Walk</option>
+            <option value="Chase 01">Chase</option>
+            <option value="Climb 01">Climb</option>            
+            <option value="Laugh 01">Laugh</option>
+            <option value="Lotus 01">Sit 禪</option>
+            <option value="Goodbye 01">Goodbye</option></select
+          ><br />
+        </div>
+      <script>
+        (() => {
+          const modelViewer = document.querySelector("#paused-change-demo4");          
+          modelViewer
+            .querySelector("#src")
+            .addEventListener("input", (event) => {
+            modelViewer.animationName = event.target.value;             
+            });
+        })();
+      </script>
+      </model-viewer>      
+      <model-viewer
+        id="paused-change-demo5"
+        skybox-image="https://cdn.glitch.global/491b1eca-951a-4c1c-a34e-f42cff336c2d/1.jpg?v=1651657980216"
+        orientation="0deg 0 0"  autoplay   ar=""   shadow-intensity="1"    environment-image="neutral"
+        auto-rotate   camera-controls   ar-status="not-presenting"
+        ar-modes="webxr scene-viewer quick-look"      animation-name="Dance Techno 01"       
+        src="https://cdn.glitch.global/b483cc74-3caf-4d24-823d-8ca8a92588f4/neo-capitalist-mocaverse.glb?v=1718608600258"
+        poster="https://cdn.glitch.global/b483cc74-3caf-4d24-823d-8ca8a92588f4/neo-capitalist-mocaverse.png?v=1718608603950"
+        ios-src="https://cdn.glitch.global/b483cc74-3caf-4d24-823d-8ca8a92588f4/Neo-capitalist-mocaverse.usdz?v=1718609638162"
+        alt="singer_rabbid" >
+      <div id="controls" class="dim">
+          <label for="src">Play:</label>
+          <select id="src">   
+            <option value="Dance Techno 01">Dance 1</option>
+            <option value="Dance Breakin 01">Dance 2</option>
+            <option value="Dance Bugs 01">Dance 3</option>
+            <option value="Sit Chair Idle 01">Sit</option>
+            <option value="Walk 01">Walk</option>
+            <option value="Chase 01">Chase</option>
+            <option value="Climb 01">Climb</option>            
+            <option value="Laugh 01">Laugh</option>
+            <option value="Lotus 01">Sit 禪</option>
+            <option value="Goodbye 01">Goodbye</option></select
+          ><br />
+        </div>
+      <script>
+        (() => {
+          const modelViewer = document.querySelector("#paused-change-demo5");          
+          modelViewer
+            .querySelector("#src")
+            .addEventListener("input", (event) => {
+            modelViewer.animationName = event.target.value;             
+            });
+        })();
+      </script>
+      </model-viewer>      
+    </div>
+    <footer>
+      <span>QR code ✌️</span>
+      <a
+          class="cc"
+          href="https://bayc4.glitch.me/"
+          target="_blank"
+        >
+          <img
+            src="https://cdn.glitch.global/b483cc74-3caf-4d24-823d-8ca8a92588f4/moca5.png?v=1718609228634"
+          />
+        </a>
+    </footer>
+  </body>
+</html>
