@@ -27,7 +27,7 @@
                         <a class="nav-link" href="index.html#about" data-zh="關於我" data-en="About" data-de="Über mich">關於我</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#projects" data-zh="我的項目" data-en="My Projects" data-de="Meine Projekte">我的項目</a>
+                        <a class="nav-link" href="index.html#projects" data-zh="我的專案" data-en="My Projects" data-de="Meine Projekte">我的專案</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#publications" data-zh="學術發表" data-en="Publications" data-de="Veröffentlichungen">學術發表</a>
@@ -51,7 +51,7 @@
         <div class="container">
             <a href="index.html#projects" class="back-btn">
                 <i class="fas fa-arrow-left"></i>
-                <span data-zh="返回項目列表" data-en="Back to Projects" data-de="Zurück zu Projekten">返回項目列表</span>
+                <span data-zh="返回專案列表" data-en="Back to Projects" data-de="Zurück zu Projekten">返回專案列表</span>
             </a>
 
             <nav aria-label="breadcrumb">
@@ -60,7 +60,7 @@
                         <a href="index.html" data-zh="首頁" data-en="Home" data-de="Startseite">首頁</a>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="index.html#projects" data-zh="項目" data-en="Projects" data-de="Projekte">項目</a>
+                        <a href="index.html#projects" data-zh="專案" data-en="Projects" data-de="Projekte">專案</a>
                     </li>
                     <li class="breadcrumb-item active" id="breadcrumb-unit">Unit</li>
                 </ol>
@@ -91,7 +91,7 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="imageModalTitle" data-zh="項目圖片" data-en="Project Image" data-de="Projekt-Bild">項目圖片</h5>
+                    <h5 class="modal-title" id="imageModalTitle" data-zh="專案圖片" data-en="Project Image" data-de="Projekt-Bild">專案圖片</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body text-center">
@@ -145,7 +145,7 @@
             if (currentLanguage === 'zh') {
                 unitText = `Unit #${currentUnit}`;
                 subtitleText = `第${currentUnit}單元的作業`;
-                titleText = `${unitText} - 項目詳情 | Dr. Pin Luarn`;
+                titleText = `${unitText} - 專案詳情 | Dr. Pin Luarn`;
             } else if (currentLanguage === 'en') {
                 unitText = `Unit #${currentUnit}`;
                 subtitleText = `Assignment for Unit #${currentUnit}`;
@@ -247,7 +247,7 @@
 
             // Update modal title based on current language
             const modalTitleText = {
-                'zh': '項目圖片',
+                'zh': '專案圖片',
                 'en': 'Project Image',
                 'de': 'Projekt-Bild'
             };
